@@ -22,6 +22,13 @@ import Unauthorized from '@/pages/Unauthorized'
 // Common Components
 import SplashScreen from '@/components/common/SplashScreen'
 
+// Dashboard Subpages (create these files/components as needed)
+import Clients from '@/pages/dashboard/Clients'
+import Hardware from '@/pages/dashboard/Hardware'
+import Others from '@/pages/dashboard/Others'
+import Notifications from '@/pages/dashboard/Notifications'
+import Profile from '@/pages/dashboard/Profile'
+
 function App() {
   const dispatch = useAppDispatch()
   const uiState = useAppSelector(state => state.ui)
@@ -76,6 +83,43 @@ function App() {
         <ProtectedRoute>
           <Layout>
             <Dashboard />
+          </Layout>
+        </ProtectedRoute>
+      } />
+
+      {/* Dashboard Subpages */}
+      <Route path="/dashboard/clients" element={
+        <ProtectedRoute>
+          <Layout>
+            <Clients />
+          </Layout>
+        </ProtectedRoute>
+      } />
+      <Route path="/dashboard/hardware" element={
+        <ProtectedRoute>
+          <Layout>
+            <Hardware />
+          </Layout>
+        </ProtectedRoute>
+      } />
+      <Route path="/dashboard/others" element={
+        <ProtectedRoute>
+          <Layout>
+            <Others />
+          </Layout>
+        </ProtectedRoute>
+      } />
+      <Route path="/dashboard/notifications" element={
+        <ProtectedRoute>
+          <Layout>
+            <Notifications />
+          </Layout>
+        </ProtectedRoute>
+      } />
+      <Route path="/dashboard/profile" element={
+        <ProtectedRoute>
+          <Layout>
+            <Profile />
           </Layout>
         </ProtectedRoute>
       } />
