@@ -1,8 +1,11 @@
+import ClientsTab from '@/components/ClientTab'
 import React from 'react'
 
 const Clients = () => {
   return (
-    <div>Clients</div>
+    <div>
+      <ClientsTab />
+    </div>
   )
 }
 

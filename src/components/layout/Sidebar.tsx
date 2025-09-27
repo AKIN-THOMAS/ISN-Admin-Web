@@ -88,7 +88,7 @@ const Sidebar = ({ open, onOpenChange }: AdminSidebarProps) => {
       {/* Mobile overlay */}
       {open && (
         <div 
-          className="fixed inset-0 z-50 bg-black/50 lg:hidden"
+          className="fixed inset-0 z-40 bg-white/80 dark:bg-black/80 lg:hidden"
           onClick={() => onOpenChange(false)}
         />
       )}

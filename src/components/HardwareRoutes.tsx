@@ -149,60 +149,30 @@ const HardwareRoutes: React.FC = () => {
 
   return (
     <div className="flex flex-col gap-4">
-      {/* Subtabs row */}
-      <div className="px-2 sm:px-4 pt-2 pb-2 flex items-center gap-3">
+          {/* Subtabs row */}
+          <div className="px-2 sm:px-4 pt-2 pb-2 flex flex-wrap md:flex-nowrap gap-2">
+      {[
+        { key: "all", label: "All routes" },
+        { key: "online", label: "Online routes" },
+        { key: "offline", label: "Offline routes" },
+        { key: "inactive", label: "Inactive routes" },
+      ].map((tab) => (
         <button
+          key={tab.key}
           className={cn(
-            'px-4 py-2 rounded text-btn-base font-semibold transition-colors',
-            activeSubTab === 'all'
-              ? 'bg-primary-500 text-white shadow'
-              : 'bg-transparent text-muted-foreground hover:text-primary-500'
+            "w-full md:w-auto px-4 py-2 rounded text-btn-base font-semibold transition-colors",
+            activeSubTab === tab.key
+              ? "bg-primary-500 text-white shadow"
+              : "bg-transparent text-muted-foreground hover:text-primary-500"
           )}
-          onClick={() => setActiveSubTab('all')}
-          aria-selected={activeSubTab === 'all'}
+          onClick={() => setActiveSubTab(tab.key as any)}
+          aria-selected={activeSubTab === tab.key}
         >
-          All routes
+          {tab.label}
         </button>
+      ))}
+    </div>
 
-        <button
-          className={cn(
-            'px-4 py-2 rounded text-btn-base font-semibold transition-colors',
-            activeSubTab === 'online'
-              ? 'bg-primary-500 text-white shadow'
-              : 'bg-transparent text-muted-foreground hover:text-primary-500'
-          )}
-          onClick={() => setActiveSubTab('online')}
-          aria-selected={activeSubTab === 'online'}
-        >
-          Online routes
-        </button>
-
-        <button
-          className={cn(
-            'px-4 py-2 rounded text-btn-base font-semibold transition-colors',
-            activeSubTab === 'offline'
-              ? 'bg-primary-500 text-white shadow'
-              : 'bg-transparent text-muted-foreground hover:text-primary-500'
-          )}
-          onClick={() => setActiveSubTab('offline')}
-          aria-selected={activeSubTab === 'offline'}
-        >
-          Offline routes
-        </button>
-
-        <button
-          className={cn(
-            'px-4 py-2 rounded text-btn-base font-semibold transition-colors',
-            activeSubTab === 'inactive'
-              ? 'bg-primary-500 text-white shadow'
-              : 'bg-transparent text-muted-foreground hover:text-primary-500'
-          )}
-          onClick={() => setActiveSubTab('inactive')}
-          aria-selected={activeSubTab === 'inactive'}
-        >
-          Inactive routes
-        </button>
-      </div>
 
       {/* Table + pagination area */}
       <div className="px-2 sm:px-4">
