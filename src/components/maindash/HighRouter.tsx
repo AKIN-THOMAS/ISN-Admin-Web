@@ -1,4 +1,4 @@
-import BasicTable, { TableColumn, TableRow } from './BasicTable'
+import BasicTable, { TableColumn, TableRow } from '../BasicTable'
 
 const columns: TableColumn[] = [
   { key: 'service', label: 'Service' },

@@ -1,8 +1,9 @@
-import KpiCards from './KpiCards'
+// import KpiCards from './KpiCards'
 import totalRoutersIcon from '@/assets/images/totalRouters.svg'
 import onlineRoutersIcon from '@/assets/images/onlineRouters.svg'
 import offlineUsersIcon from '@/assets/images/offlineRouters2.svg'
 import inactiveRoutersIcon from '@/assets/images/inactiveRouters.svg'
+import KpiCards from '../KpiCards'
 
 const HardwareOverview = () => {
   return (

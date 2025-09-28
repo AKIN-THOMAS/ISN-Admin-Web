@@ -2,8 +2,8 @@ import { useState, useEffect, useRef } from 'react'
 import { useAppDispatch } from '@/store'
 import { fetchDashboardStart, fetchDashboardSuccess } from '@/store/slices/dashboardSlice'
 import { cn } from '@/lib/utils'
-import OverviewTab from '@/components/OverviewTab'
-import NetworkTab from '@/components/NetworkTab'
+import OverviewTab from '@/components/maindash/OverviewTab'
+import NetworkTab from '@/components/maindash/NetworkTab'
 
 
 const Dashboard: React.FC = () => {
