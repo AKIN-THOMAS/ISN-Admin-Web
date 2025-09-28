@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { cn } from '@/lib/utils'
-import HardwareOverview from '@/components/HardwareOverview'
-import HardwareRoutes from '@/components/HardwareRoutes'
-import HardwareUsage from '@/components/HardwareUsage'
+import HardwareOverview from '@/components/hardware/HardwareOverview'
+import HardwareRoutes from '@/components/hardware/HardwareRoutes'
+import HardwareUsage from '@/components/hardware/HardwareUsage'
 
 
 const Hardware: React.FC = () => {

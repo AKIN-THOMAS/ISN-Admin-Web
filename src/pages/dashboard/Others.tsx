@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { cn } from '@/lib/utils'
-import OthersOverview from '@/components/OthersOverview'
-import OthersRoutes from '@/components/OthersRoutes'
-import OthersUsage from '@/components/OthersUsage'
+import OthersOverview from '@/components/others/OthersOverview'
+import OthersRoutes from '@/components/others/OthersRoutes'
+import OthersUsage from '@/components/others/OthersUsage'
 import type { TableRow } from '@/components/BasicTable'
 
 const Others: React.FC = () => {

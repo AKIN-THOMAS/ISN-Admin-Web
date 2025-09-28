@@ -21,6 +21,8 @@ import Unauthorized from '@/pages/Unauthorized'
 
 // Common Components
 import SplashScreen from '@/components/common/SplashScreen'
+import { Toaster } from "@/components/ui/toaster"
+
 
 // Dashboard Subpages (create these files/components as needed)
 import Clients from '@/pages/dashboard/Clients'
@@ -132,6 +134,7 @@ function App() {
 
       {/* 404 Route */}
       <Route path="*" element={<NotFound />} />
+      {/* <Toaster /> */}
     </Routes>
   )
 }

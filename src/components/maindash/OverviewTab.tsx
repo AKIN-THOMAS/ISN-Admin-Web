@@ -1,5 +1,5 @@
 import React from 'react'
-import KpiCards from './KpiCards'
+import KpiCards from '../KpiCards'
 import RouterStats from './RouterStats'
 import ServerStats from './ServerStats'
 import MikroTik from './MikroTik'

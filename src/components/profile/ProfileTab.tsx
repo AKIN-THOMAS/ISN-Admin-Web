@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import EditProfileForm from "@/components/EditProfileForm"
+import EditProfileForm from "@/components/profile/EditProfileForm"
 
 const ProfileTab: React.FC = () => {
   const [isEditing, setIsEditing] = useState(false)

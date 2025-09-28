@@ -10,7 +10,7 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import Pagination from "@/components/Pagination"
-import DataUsageDetails from "@/components/DataUsageDetails"
+import DataUsageDetails from "@/components/hardware/DataUsageDetails"
 
 // Define row type for this table
 interface UsageRow {

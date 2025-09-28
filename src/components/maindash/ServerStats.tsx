@@ -1,5 +1,5 @@
 import { useLayoutEffect, useRef, useState } from 'react'
-import { Card, CardContent, CardHeader, CardTitle } from './ui/card'
+import { Card, CardContent, CardHeader, CardTitle } from '../ui/card'
 
 const ServerStats = () => {
     const rightRef = useRef<HTMLDivElement>(null)

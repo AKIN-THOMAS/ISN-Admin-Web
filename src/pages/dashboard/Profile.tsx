@@ -1,10 +1,10 @@
 import React, { useState } from "react"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
-import ProfileTab from "@/components/ProfileTab"
-import RolesTab from "@/components/RolesTab"
-import AdminManagementTab from "@/components/AdminManagementTab"
-import ActivityLogTab from "@/components/ActivityLogTab"
+import ProfileTab from "@/components/profile/ProfileTab"
+import RolesTab from "@/components/profile/RolesTab"
+import AdminManagementTab from "@/components/profile/AdminManagementTab"
+import ActivityLogTab from "@/components/profile/ActivityLogTab"
 
 const Profile: React.FC = () => {
   const [activeTab, setActiveTab] = useState<
