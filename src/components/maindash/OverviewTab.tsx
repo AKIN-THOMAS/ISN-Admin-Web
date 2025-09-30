@@ -5,8 +5,8 @@ import ServerStats from './ServerStats'
 import MikroTik from './MikroTik'
 import totalusersIcon from '@/assets/images/totalusers.svg'
 import activeUsersIcon from '@/assets/images/activeUsers.svg'
-import offlineUsersIcon from '@/assets/images/offlineusers.svg'
-import offlineRoutersIcon from '@/assets/images/offlinerouters.svg'
+import offlineUsersIcon from '@/assets/images/offlineUsers.svg'
+import offlineRoutersIcon from '@/assets/images/offlineRouters.svg'
 
 interface OverviewProps {
   leftRef: React.RefObject<HTMLDivElement>;
