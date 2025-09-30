@@ -4,7 +4,7 @@ import RouterStats from './RouterStats'
 import ServerStats from './ServerStats'
 import MikroTik from './MikroTik'
 import totalusersIcon from '@/assets/images/totalusers.svg'
-import activeUsersIcon from '@/assets/images/activeusers.svg'
+import activeUsersIcon from '@/assets/images/activeUsers.svg'
 import offlineUsersIcon from '@/assets/images/offlineusers.svg'
 import offlineRoutersIcon from '@/assets/images/offlinerouters.svg'
 
