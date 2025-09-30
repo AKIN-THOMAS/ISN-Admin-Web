@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { useAppDispatch, useAppSelector } from '@/hooks';
-import { getCurrentUserAsync } from '@/store/slices/authSlice';
 
 export const useAppInitialization = () => {
   const dispatch = useAppDispatch();
@@ -9,7 +8,7 @@ export const useAppInitialization = () => {
   useEffect(() => {
     // If we have a token but user is not authenticated, try to get current user
     if (token && !isAuthenticated) {
-      dispatch(getCurrentUserAsync());
+      // dispatch(getCurrentUserAsync());
     }
   }, [dispatch, token, isAuthenticated]);
 };

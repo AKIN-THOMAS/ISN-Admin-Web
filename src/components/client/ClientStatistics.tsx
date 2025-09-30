@@ -111,7 +111,7 @@ const SummaryCard: React.FC<{ title: string; value: React.ReactNode }> = ({ titl
   </div>
 )
 
-const ClientStatistics: React.FC<Props> = ({ client, service = sampleService, onEdit, onSeeDataUsage }) => {
+const ClientStatistics: React.FC<Props> = ({ service = sampleService, onEdit, onSeeDataUsage }) => {
   const [copied, setCopied] = useState(false)
   const [period, setPeriod] = useState<"monthly" | "daily" | "weekly" | "yearly">("monthly")
 

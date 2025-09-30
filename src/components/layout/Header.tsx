@@ -1,4 +1,4 @@
-import { useAppSelector, useAppDispatch } from '@/store'
+import {  useAppDispatch } from '@/store'
 import { Bell, Menu, Search, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -9,7 +9,7 @@ import {
   DropdownMenuSeparator, 
   DropdownMenuTrigger 
 } from '@/components/ui/dropdown-menu';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { Badge } from '@/components/ui/badge';
 import { logout } from '@/store/slices/authSlice';
 import { useNavigate } from 'react-router-dom';
@@ -22,16 +22,12 @@ interface AdminHeaderProps {
   const Header = ({ onMenuClick }: AdminHeaderProps) => {
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
-    // const { user } = useAppSelector(state => state.auth);
 
     const handleLogout = async () => {
       dispatch(logout());
       navigate('/auth/login');
     };
-    const getInitials = (name: string) => {
-      return name.split(' ').map(n => n[0]).join('').toUpperCase();
-    };
-
+   
   return (
     <header className="bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700">
       <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">

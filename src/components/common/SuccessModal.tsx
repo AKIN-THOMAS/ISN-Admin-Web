@@ -48,13 +48,17 @@ const SuccessModal: React.FC<SuccessModalProps> = ({
   const [showConfetti, setShowConfetti] = useState(false)
 
   useEffect(() => {
-    if (isOpen) {
-      setShowConfetti(true)
-      // Stop confetti after 3 seconds
-      const timer = setTimeout(() => setShowConfetti(false), 3000)
-      return () => clearTimeout(timer)
-    }
-  }, [isOpen])
+  let timer: NodeJS.Timeout | undefined
+
+  if (isOpen) {
+    setShowConfetti(true)
+    timer = setTimeout(() => setShowConfetti(false), 3000)
+  }
+
+  return () => {
+    if (timer) clearTimeout(timer)
+  }
+}, [isOpen])
 
   // Generate confetti pieces
   const confettiColors = [

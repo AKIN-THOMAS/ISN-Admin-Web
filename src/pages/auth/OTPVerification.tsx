@@ -9,7 +9,7 @@ const OTPVerification = () => {
   const navigate = useNavigate()
   const location = useLocation()
   const [isLoading, setIsLoading] = useState(false)
-  const [isPageLoading, setIsPageLoading] = useState(false)
+  const [isPageLoading, ] = useState(false)
   const [otp, setOtp] = useState<string[]>(new Array(6).fill(''))
   const [countdown, setCountdown] = useState(60)
   const [canResend, setCanResend] = useState(false)

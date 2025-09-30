@@ -8,7 +8,7 @@ import logoImage from '@/assets/images/isn-logo-113.png'
 const ResetPassword = () => {
   const navigate = useNavigate()
   const [isLoading, setIsLoading] = useState(false)
-  const [isPageLoading, setIsPageLoading] = useState(false)
+  const [isPageLoading, ] = useState(false)
   const [email, setEmail] = useState('')
 
   const handleResetPassword = async (e: React.FormEvent) => {

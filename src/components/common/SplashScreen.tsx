@@ -171,7 +171,7 @@ const SplashScreen = ({ onLoadingComplete, duration = 3000 }: SplashScreenProps)
       </div>
 
       {/* Custom styles */}
-      <style jsx>{`
+      {/* <style jsx>{`
         @keyframes glow {
           0% { opacity: 0.2; transform: scale(1.5); }
           100% { opacity: 0.4; transform: scale(1.8); }
@@ -200,7 +200,7 @@ const SplashScreen = ({ onLoadingComplete, duration = 3000 }: SplashScreenProps)
         .animate-float {
           animation: float linear infinite;
         }
-      `}</style>
+      `}</style> */}
     </div>
   )
 }

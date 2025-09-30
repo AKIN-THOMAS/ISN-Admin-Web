@@ -10,7 +10,7 @@ const Dashboard: React.FC = () => {
   const dispatch = useAppDispatch()
   const [activeTab, setActiveTab] = useState<'overview' | 'network'>('overview')
   const leftRef = useRef<HTMLDivElement>(null)
-  const [containerHeight, setContainerHeight] = useState<number | undefined>(undefined)
+  const [containerHeight] = useState<number | undefined>(undefined)
 
   useEffect(() => {
     dispatch(fetchDashboardStart())
