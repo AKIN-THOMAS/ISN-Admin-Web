@@ -117,11 +117,11 @@ const CompactServiceCard: React.FC<{ service: Service; onEdit?: (s: Service) => 
   </Card>
 )
 
-const ClientServices: React.FC<Props> = ({ client, services = sampleServices, onEdit }) => {
+const ClientServices: React.FC<Props> = ({  services = sampleServices, onEdit }) => {
   // subTab: 'all' or 'internet' — keep 'all' behavior unchanged, internet will be empty placeholder
   const [subTab, setSubTab] = useState<"all" | "internet">("all")
 
-  const internetService = useMemo(() => services.find(s => s.type.toLowerCase() === "internet" || (s.name && s.name.toLowerCase().includes("internet"))), [services])
+  // const internetService = useMemo(() => services.find(s => s.type.toLowerCase() === "internet" || (s.name && s.name.toLowerCase().includes("internet"))), [services])
 
   const clientTotal = useMemo(() => {
     if (!services || services.length === 0) return "—"

@@ -10,7 +10,7 @@ import logoImage from '@/assets/images/isn-logo-113.png'
 const NewPassword = () => {
   const navigate = useNavigate()
   const [isLoading, setIsLoading] = useState(false)
-  const [isPageLoading, setIsPageLoading] = useState(false)
+  const [isPageLoading, ] = useState(false)
   const [newPassword, setNewPassword] = useState('')
   const [confirmPassword, setConfirmPassword] = useState('')
   const [showSuccessModal, setShowSuccessModal] = useState(false)
